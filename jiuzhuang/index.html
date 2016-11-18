@@ -1,0 +1,405 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-ua-compatible" content="ie=7" />
+<title>阑泉红酒庄</title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
+<link rel="stylesheet" href="css/indexzzsc.css" type="text/css" />
+<link type="text/css" href="css/indexflexslider.min.css" rel="stylesheet" />
+<link type="text/css" href="css/lrtk.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.flexslider.min.js"></script>
+
+<script type="text/javascript">
+/*
+$(window).load(function() {
+$('.flexslider').flexslider();
+});
+
+$(document).ready(function() {
+$('.flexslider').hover(function() {
+$('.flex-direction-nav li a.prev').css('display', 'block');
+$('.flex-direction-nav li a.next').css('display', 'block');
+}, function() {
+$('.flex-direction-nav li a.prev').css('display', 'none');
+$('.flex-direction-nav li a.next').css('display', 'none');
+});
+
+});
+*/
+
+$(function() {
+$('.flexslider').flexslider();
+});
+
+
+$(function() {
+$('.flexslider').hover(function() {
+$('.flex-direction-nav li a.prev').css('display', 'block');
+$('.flex-direction-nav li a.next').css('display', 'block');
+}, function() {
+$('.flex-direction-nav li a.prev').css('display', 'none');
+$('.flex-direction-nav li a.next').css('display', 'none');
+});
+
+});
+
+
+
+
+</script>
+
+</head>
+
+
+
+<body>
+<div style="background:url(images/bg.jpg) top no-repeat">
+<!-------------------------  logo s ---------------------->
+<div class="logo">
+<div class="logoa"><a href="index.html"><img src="images/logo02.png"/></a></div>
+</div>
+<!-------------------------  logo e ---------------------->
+
+
+
+<!-------------------------  box s ---------------------->
+<div class="box">
+
+
+<!-------------------------  menu s ---------------------->
+<div class="muen">
+<ul>
+<li><a href="index.html" class="c">首页<br/><span>Home</span></a></li>
+<li><a href="Company.html">公司简介<br/><span>Company</span></a></li>
+<li><a href="News.html">新闻资讯<br/><span>News</span></a></li>
+<li><a href="Quest Product.html">探秘产品<br/><span>Quest Product</span></a></li>
+<li><a href="Products shows.html">产品展示<br/><span>Products shows</span></a></li>
+<li><a href="Business Area.html">商务专区<br/><span>Business Area</span></a></li>
+<li><a href="Joins   Us.html">招商加盟<br/><span>Joins   Us</span></a></li>
+<li><a href="Customer Service.html">客服服务<br/><span>Customer Service</span></a></li>
+<li><a href="Contact Us.html">联系我们<br/><span>Contact Us</span></a></li>
+</ul>
+</div>
+<!-------------------------  menu e ---------------------->
+
+
+<!-------------------------  banner s ---------------------->
+<div class="banner">
+<div class="moduletable-banner">
+	<div class="flexslider">
+		<ul class="slides">
+			<li>
+			<a href="#" target="_blank">
+			<img src="images/banner01.jpg" width="1004px" height="405" /></a>
+			</li>
+			<li>
+			<a href="#" target="_blank">
+			<img src="images/banner02.jpg" width="1004px" height="405"  /></a>
+			</li>
+			<li>
+			<a href="#" target="_blank">
+			<img src="images/banner03.jpg" width="1004px" height="405" /></a> 
+			</li>
+			<li>
+			<a href="#" target="_blank">
+			<img src="images/banner04.jpg" width="1004px" height="405"  /></a>
+			</li>
+			<a href="#" target="_blank">
+			<img src="images/banner05.jpg" width="1004px" height="405"  /></a>
+			</li>
+		</ul>
+	</div>
+</div>
+</div>
+<!-------------------------  banner e ---------------------->
+
+
+<!-------------------------  main s ---------------------->
+<div class="main">
+
+<!-------------------------  main-l s ---------------------->
+<div class="main_l">
+
+<div class="main_la">
+
+<div class="main_lat">
+<div class="main_lbt"><img src="images/main_la01.jpg"/></div>
+<div class="main_lbt1"><img src="images/main_la02.jpg"/></div>
+</div>
+
+<div class="main_lad">
+<div class="main_lad_main">
+
+<script type="text/javascript">
+//js无缝滚动代码
+function marquee(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+	if (direction == "up"){
+		if (obj2.offsetTop - obj.scrollTop <= 0){
+			obj.scrollTop -= (obj1.offsetHeight + 20);
+		}else{
+			var tmp = obj.scrollTop;
+			obj.scrollTop++;
+			if (obj.scrollTop == tmp){
+				obj.scrollTop = 1;
+			}
+		}
+	}else{
+		if (obj2.offsetWidth - obj.scrollLeft <= 0){
+			obj.scrollLeft -= obj1.offsetWidth;
+		}else{
+			obj.scrollLeft++;
+		}
+	}
+}
+
+function marqueeStart(i, direction){
+	var obj = document.getElementById("marquee" + i);
+	var obj1 = document.getElementById("marquee" + i + "_1");
+	var obj2 = document.getElementById("marquee" + i + "_2");
+
+	obj2.innerHTML = obj1.innerHTML;
+	var marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	obj.onmouseover = function(){
+		window.clearInterval(marqueeVar);
+	}
+	obj.onmouseout = function(){
+		marqueeVar = window.setInterval("marquee("+ i +", '"+ direction +"')", 20);
+	}
+}
+</script>
+
+
+<div id="marquee1" class="marqueeleft">
+<div style="width:8000px;">
+	<ul id="marquee1_1">
+			<li>
+			<a class="pic" href="#"><img src="images/1.jpg"/></a></li>
+			<li>
+			<a class="pic" href="#"><img src="images/2.jpg"/></a></li>
+			<li>
+			<a class="pic" href="#"><img src="images/3.jpg"/></a></li>
+			<li>
+			<a class="pic" href="#"><img src="images/4.jpg"/></a></li>
+		</ul>
+		
+		<ul id="marquee1_2"></ul>
+	</div>
+</div>
+<script type="text/javascript">marqueeStart(1, "left");</script>
+
+
+</div>
+</div>
+
+
+
+
+
+</div>
+
+<div class="main_lb">
+
+<div class="main_ldt">
+<div class="main_lbt"><img src="images/main_lb01.jpg"/></div>
+<div class="main_lbt1"><img src="images/main_lb02.jpg"/></div>
+</div>
+
+<div class="main_lbd">
+<div class="main_lbd_list">
+	<ul>
+	<li><span>7-18</span><a href="#">葡萄酒质量大赛获奖产品巡展拉</a></li>
+	<li><span>7-15</span><a href="#">大连国际葡萄酒美食节得到国外酒...</a></li>
+    <li><span>6-28</span><a href="#">葡萄种植海拔应对变暖意大利提</a></li>
+	<li><span>6-20</span><a href="#">红酒投资：“跑赢CPI”的另类</a></li>
+	<li><span>6-18</span><a href="#">印度加入国际葡萄与葡萄酒组织</a></li>
+	<li><span>6-15</span><a href="#">提高葡萄种植海拔应对变暖意大</a></li>
+    </ul>
+    <div class="clear"></div>
+	<br/>
+	</div>
+</div>
+
+</div>
+
+<div class="main_lc">
+<div class="main_lc_title"><img src="images/main_lc03.jpg"/></div>
+<div class="main_lc_title1"><a href="Joins   Us.html"><img src="images/main_lc02.jpg"/></a></div>
+</div>
+
+<div class="main_ld">
+
+<div class="main_ldt">
+<div class="main_ldtl"><img src="images/main_lc04.jpg"/></div>
+<div class="main_ldtr"><a href="Quest Product2.html"><img src="images/main_ld01.jpg"/></a></div>
+</div>
+
+<div class="main_ldd">
+<div class="main_lddl"><div class="main_lddl1"><a href="#"><img src="images/main_ld03.jpg" width="140" height="81"/></a></div></div>
+<div class="main_lddr">
+<div class="a_newslist_list">
+	<ul>
+	<li style="background:url(images/main_ld04.jpg) no-repeat;"><a href="#">吐酒最能体现品酒者的</a></li>
+	<li><a href="#">了解并掌握葡萄酒5个</a></li>
+    <li style="background:url(images/main_ld04.jpg) no-repeat;"><a href="#">通过察看葡萄酒的颜色</a></li>
+	<li><a href="#">保鲜开瓶后的葡萄酒方法</a></li>
+    </ul>
+    <div class="clear"></div>
+	<br/>
+	</div>
+</div>
+</div>
+
+</div>
+
+</div>
+<!-------------------------  main-l e ---------------------->
+
+
+<!-------------------------  main-r s ---------------------->
+<div class="main_r">
+
+<div class="main_ra">
+<div class="main_rat">
+<div class="main_rat_title"><img src="images/main_ra04.jpg"/></div>
+</div>
+<div class="main_ral"><a href="#"><img src="images/main_ra02.jpg" width="283" height="214"/></a></div>
+<div class="main_rar"><a href="Company.html">位于广东深圳市南山经济开发区，是由深圳市阑泉红酒庄有限公司（SHENZHEN  LANQUANHONG  COMPANY）投资创建。</a><a href="Company.html">阑泉红酒庄为中国葡萄酒行业搭建了与世界一流葡萄酒庄园的酿造技术、管理经验、庄园文化等互通有无的平台；为葡萄酒爱好者、鉴赏家们提供了一个品鉴质优量少的顶级葡萄酒、交流葡萄酒文化的平台、为热爱生活的人们提供了一个了解葡萄酒文化，不出国门即可享受欧式风情生活的平台，阑泉红将一如既往地秉承先进的葡萄酒酿造技艺、国际化的服务与管理理念，争当中国葡萄酒酒庄文化的开拓者与领航者，将中国葡萄酒的卓越风姿展示于世界的舞台，无愧于“国际酒庄新领袖”的荣誉称号。</a></div>
+<div class="main_rar1"></div>
+</div>
+
+<div class="main_rb">
+
+<div class="mian_rbt">
+<div class="mian_rbtl"><img src="images/main_rb01.jpg"/></div>
+<div class="main_ldtr"><a href="Products shows.html"><img src="images/main_ld01.jpg"/></a></div>
+</div>
+
+<div class="mian_rbd">
+
+<div class="productlist1">
+<a href="#">
+<DIV class="productimg"><img src="images/main_rb04.jpg" width="134" height="131"/></DIV>
+<div class="producttext">奥格雷系列</DIV>
+</a>
+</div>
+
+<div class="productlist1">
+<a href="#">
+<DIV class="productimg"><img src="images/main_rb05.jpg" width="134" height="131"/></DIV>
+<div class="producttext">丽庭庄园 干红</DIV>
+</a>
+</div>
+
+<div class="productlist1">
+<a href="#">
+<DIV class="productimg"><img src="images/main_rb06.jpg" width="134" height="131"/></DIV>
+<div class="producttext">澳思利皇家佳酿</DIV>
+</a>
+</div>
+
+<div class="productlist1">
+<a href="#">
+<DIV class="productimg"><img src="images/main_rb07.jpg" width="134" height="131"/></DIV>
+<div class="producttext"> 澳思利玛格洛莎</DIV>
+</a>
+</div>
+
+</div>
+
+</div>
+
+
+
+<div class="main_rc">
+
+<div class="main_rct">
+<div class="mian_rctl"><img src="images/main_rc01.jpg"/></div>
+<div class="main_ldtr"><a href="Quest Product.html"><img src="images/main_ld01.jpg"/></a></div>
+</div>
+
+<div class="main_rcd">
+
+<div class="mian_rcdl">
+<div class="mian_rcdl_list">
+	<ul>
+	<li><a href="#">黑教皇城堡—波尔多历史最悠久的名庄</a></li>
+	<li><a href="#">欧洲葡萄酒起源——罗马葡萄酒 </a></li>
+    <li><a href="#">亚洲葡萄酒质量大赛获奖产品巡展拉开帷幕</a></li>
+	<li><a href="#">葡萄酒在历史上促进交流方面所起的作用 </a></li>
+    </ul>
+    <div class="clear"></div>
+	<br/>
+	</div>
+</div>
+
+<div class="mian_rcdr"><img src="images/main_rc03.jpg"/></div>
+
+</div>
+
+</div>
+
+
+</div>
+<!-------------------------  main-r e ---------------------->
+
+</div>
+<div class="clear"></div>
+<!-------------------------  main e ---------------------->
+
+</div>
+<!-------------------------  box e ---------------------->
+
+
+
+
+
+
+
+
+
+
+<!-------------------------  footer s ---------------------->
+<div class="footer">
+<div class="footer_main">
+<div class="H20"></div>
+Copyright © 深圳阑泉红酒庄  版权所有<br/>
+手机号码：13128747123  电话/传真：0775-2639188  电子邮箱：13128747123@163.com<br/>
+公司地址：广东深圳南山区  
+</div>
+</div>
+<!-------------------------  footer e ---------------------->
+</div>
+
+<!--代码开始-->
+<div id="chat_f1">
+	<div id="chat_f1_main">
+		<div id="close"></div>
+		<a title="点击咨询在线客服" href="#" class="a_kf"></a>
+		<a title="点击咨询售后" href="#" class="a_sh"></a>
+	</div>
+	<div class="chat_f1_expr">
+		<div class="list">
+		<a href="#">&nbsp;<img src="images/kefu01.jpg"/></a>
+		<br/>
+		<a href="#">&nbsp;<img src="images/kefu02.jpg"/></a>
+		<br/>
+		</div>
+		<div class="list">
+		手机号码：<br/><span style="color:#b40303;">13128747123</span>
+		</div>
+		<div class="list">	
+		电话/传真：<br/><span style="color:#b40303;">0775-2639188</span>
+		</div>
+	</div>
+	<div id="chat_f1_bottom"></div>
+</div>
+<div id="chat_f2" style="display:none;">我要咨询</div>
+<!--代码结束-->
+</body>
+
+</html>
